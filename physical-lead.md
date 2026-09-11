@@ -47,7 +47,7 @@ Run in order.
 
 | Check | What to verify |
 |-------|----------------|
-| **Physical lead** | For each newly named object in the physics or protocol story: can a reader decide membership from an operational criterion **without** being told the indexing, spanning, or direct-sum recipe? If the lead sentence *is* that recipe, fail. Do not write a criterion you cannot stand behind. |
+| **Physical lead** | For each newly named object in the physics or protocol story: write the membership sentence **with the recipe deleted**. Can a reader decide membership from that sentence without the indexing, spanning, or direct-sum recipe? If the sentence is empty, or the lead *is* the recipe, fail. Do not invent a criterion you cannot stand behind. Artifact: **Membership without recipe**. |
 | **Definition layering** | Order in the text: criterion, then labeling/computation, then a pointer to the coincidence proof. Do not prove coincidence inside the definition. |
 
 Related Type 2 checks that are not physical-lead-specific (negative-space, first-use, back-translation, round-trip, quantifiers, ordering) live in [math.md](math.md).

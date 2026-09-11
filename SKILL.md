@@ -70,8 +70,9 @@ Sentence (1–14) ─┬─ Passage groups 1–4
 | Prose vs math | sentence **12** + math Type 2 |
 | Physical lead / construction-as-definition | [physical-lead.md](physical-lead.md) |
 | Purpose-first (intent → natural language → formula) | [math.md](math.md) Type 2 |
+| Detect tests (how to see a violation) | Detect column in [sentence.md](sentence.md); Detect lines in [narrative.md](narrative.md); Required products in [math.md](math.md) |
 
-Apply every principle in the open file(s) in order. Name it, state how it applies. If one does not apply, say **not applicable** and why. Do not skip, merge, or abbreviate.
+Apply every principle in the open file(s) in order. Name it, state how it applies. If one does not apply, say **not applicable** and why. Do not skip, merge, or abbreviate. Coworker-loop **workers** invert this lookup (artifact first) — see **`physics-paper-editing`**.
 
 ---
 
@@ -80,8 +81,11 @@ Apply every principle in the open file(s) in order. Name it, state how it applie
 | This skill | Editing skills |
 |------------|----------------|
 | What the prose should be | How a draft is marked, checked, and merged |
+| Principle → Detect lookup | Artifact → principles worker loop (same names) |
 | Diagnose a missing operational criterion | **Definition halt** — do not ship a construction-only definition |
 | Flag unfaithful prose or a false relation | **BLOCKER / SUGGEST** mapping in `physics-paper-editing` `severity.md` |
+
+**Sibling sync:** this skill and **`physics-paper-editing`** are a paired split (canon vs harness). Changing a Detect test name, Required product, or principle ID here requires the same name in the editing skill’s worker **artifact → principles** list, **same pass**. Changing a worker artifact or its principle list requires this Detect column still to point at that artifact. Grep the sibling for the old name before finishing. Drift is a bug. Do not copy Detect paragraphs into prompts — name the test; require the same artifact label.
 
 Do not invent an operational criterion you cannot stand behind. Diagnosis is always possible; generation is not.
 
@@ -90,10 +94,10 @@ Do not invent an operational criterion you cannot stand behind. Diagnosis is alw
 | File | Role |
 |------|------|
 | **SKILL.md** | Map, litmus, pairing |
-| [sentence.md](sentence.md) | 14 sentence principles |
-| [narrative.md](narrative.md) | Four passage-level groups |
-| [math.md](math.md) | Statement types and type-specific checks |
-| [physical-lead.md](physical-lead.md) | Named physical/protocol objects |
+| [sentence.md](sentence.md) | 14 sentence principles + Detect column |
+| [narrative.md](narrative.md) | Four passage-level groups + Detect lines |
+| [math.md](math.md) | Statement types, type-specific checks, Required products |
+| [physical-lead.md](physical-lead.md) | Named physical/protocol objects; membership-without-recipe |
 
 ## Related skills
 

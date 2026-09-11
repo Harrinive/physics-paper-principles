@@ -6,7 +6,7 @@ Cursor skill for graduate-level physics and mathematics prose. **Canon** — wha
 
 ## What it does
 
-This skill is **canon**, not a workflow. It states sentence, passage, math, and physically-led-definition principles. Attach it when writing or reviewing physics-paper LaTeX, including construction-phase drafts where the coworker loop must not run.
+This skill is **canon**, not a workflow. It states sentence, passage, math, and physically-led-definition principles, plus **Detect** tests (how to see a violation). Attach it when writing or reviewing physics-paper LaTeX, including construction-phase drafts where the coworker loop must not run. The inverted worker loop (artifact → principles) lives in [physics-paper-editing](https://github.com/Harrinive/physics-paper-editing).
 
 ## Install on [Cursor](https://cursor.com)
 

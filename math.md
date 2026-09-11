@@ -4,13 +4,15 @@
 
 **Run Step 0 first**, then the checks for each statement's type. Name every check; state how it applies. If N/A: not applicable, and why.
 
+Each type lists **Required products** — the artifacts that make the checks visible. Coworker-loop **math workers** run the inverted workflow in **`physics-paper-editing`** (artifact first, then the checks listed under it).
+
 Named objects in the physical or protocol story: run [physical-lead.md](physical-lead.md) in addition to Type 2 below.
 
 ---
 
 ## Step 0 — Classify each math statement
 
-For every definition, condition, equation, lemma, theorem, or model in the passage, state its type explicitly before running checks. A statement can be dual-typed (run both check sets):
+For every definition, condition, equation, lemma, theorem, or model in the passage, state its type explicitly before running checks (**Required product:** Type tag). A statement can be dual-typed (run both check sets):
 
 | Type | Description | Criterion to verify |
 |------|-------------|---------------------|
@@ -22,6 +24,8 @@ For every definition, condition, equation, lemma, theorem, or model in the passa
 ---
 
 ## Type 1 checks (Derived)
+
+**Required products:** **Implication arrow + leap words + where hypotheses are used** — $P\Rightarrow Q$ / $Q\Rightarrow P$ / iff; leap words (`clearly` / `obviously` / `it is easy to see`) treated as a leap until a premise is named; where each hypothesis is used.
 
 Run every check below in order.
 
@@ -42,6 +46,8 @@ Run every check below in order.
 
 Posited statements must be purpose-first: intent → natural-language statement → formalization. That is not enough when the "intent" *is* the construction. **Named objects in the physical or protocol story** must be **physically led** — full statement in [physical-lead.md](physical-lead.md).
 
+**Required products:** **Independent formalization** (round-trip); **Excluded pathology** (negative-space, in words); **Membership without recipe** if the statement names a physical or protocol object.
+
 Run every check below in order.
 
 | Check | What to verify |
@@ -59,6 +65,8 @@ Run every check below in order.
 
 ## Type 3 checks (Imported)
 
+**Required products:** **Import** — quoted hypotheses vs hypotheses used here; citation is theorem/page not the whole work; **status** (theorem vs conjecture vs numerical observation).
+
 Run every check below in order; escalate when verification is not possible.
 
 | Check | What to verify |
@@ -72,6 +80,8 @@ Run every check below in order; escalate when verification is not possible.
 ---
 
 ## Type 4 checks (Convention choice)
+
+**Required products:** **WLOG-reason** — existence one-liner; independence one-liner; WLOG only with a stated symmetry or equivalence (otherwise it is proof-by-example).
 
 Run every check below in order.
 
