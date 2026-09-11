@@ -21,13 +21,14 @@ description: >-
 | When | Read |
 |------|------|
 | **Always** | Principle map below |
+| **This skill referenced alone** | This skill’s files only. Do not read and follow **`physics-paper-editing`**. |
 | **Writing or reviewing a sentence / local passage** | [sentence.md](sentence.md) |
 | **Anything longer than one sentence** | + [narrative.md](narrative.md) |
 | **Math, equations, logical argument, or a named-object definition** | + [math.md](math.md) |
 | **Introducing or rewriting a named physical/protocol object** | + [physical-lead.md](physical-lead.md) **first** |
 | **Running the coworker loop / section edit** | **`physics-paper-editing`** or **`physics-paper-editing-section`** — this skill is canon, not the process |
 
-**First reply when this skill applies alone** (no editing skill attached): say which layer(s) govern the passage (sentence / narrative / math / physical lead). Do not start the coworker loop.
+**When this skill is referenced alone,** do not read and follow **`physics-paper-editing`**. First reply: say which layer(s) govern the passage (sentence / narrative / math / physical lead).
 
 When **`physics-paper-editing`** is also attached, that skill’s first-reply and loop rules win; use this file as drafting canon.
 
