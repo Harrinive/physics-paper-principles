@@ -1,71 +1,57 @@
 # Named physical and protocol objects
 
-**For agents:** Start with [SKILL.md](SKILL.md). Open when the passage **introduces or rewrites** a named object in the physics or protocol story (`definition` environment, “we define”, first-use coinage).
+**For agents:** Start with [SKILL.md](SKILL.md). Open when the passage introduces or rewrites a named object in the physics or protocol story.
 
-A correct construction is not a definition. The lead must be an **operational membership criterion**, not an indexing, spanning, or computation recipe.
+**Think about the physical meaning before choosing or retaining the definition.** Prefer defining an object by its physical behavior or operational role when that gives a precise, useful characterization. Mathematical constructions are also legitimate definitions. The requirement is a physically intelligible story and a faithful definition, not one mandatory definition form.
 
-How an editing job *halts* before writing a construction-only definition is **`physics-paper-editing`** (`coworker-loop.md` § Definition halt). This file is the diagnostic and the shape of a physically led definition.
+## Physical meaning first
 
----
+Before drafting or judging the definition, complete this assessment:
 
-## Three layers
+1. Identify what the object describes, measures, predicts, or enables in this setting. Use the surrounding manuscript; an existing explanation need not be repeated inside a definition environment.
+2. Actively consider a definition in terms of that physical meaning. For a class of states or errors, ask what qualifies; for a map, ask what input becomes what output; for a quantity, ask what it measures. Prefer this form when it is precise and makes the concept easier to understand.
+3. Choose the clearest faithful form below. If another form works better, record briefly why in the review notes: for example, the action already specifies the physics, the construction is transparent, or an operational equivalence needs assumptions not established here. Do not manufacture an operational criterion merely to satisfy the preference.
 
-Named objects in the physical or protocol story must be **physically led**:
+**Required artifact: Physical meaning and definition choice** — physical role; whether a useful operational definition is available; chosen form and a brief reason. This is a drafting/review aid, not boilerplate to insert in the paper or a demand to expose a long deliberation. For purely formal bookkeeping, state its mathematical role and mark the operational preference N/A.
 
-1. **Operational criterion** — a membership test a reader can apply without the formula (what happens to the system, what an ideal protocol can restore or detect, what is measurable).
-2. **Computational labeling** — how those objects are indexed or computed.
-3. **Coincidence** — that (1) and (2) agree is a derived claim (lemma or supplement), not the definition.
+## Legitimate ways to define an object
 
-**Shape:** criterion first, then how those objects are labeled or computed, then where coincidence is proved.
+Forms can be combined; choose for the object and audience.
 
-**Anti-pattern — construction-as-definition:** the definition *is* the recipe (direct sum, span of labeled records, kernel of a bookkeeping map) with no prior membership test. Mathematical accuracy does not pass this check.
+| Form | What defines the object | When it helps / what to check |
+|------|-------------------------|-----------------------------|
+| **Physical or operational characterization (preferred when useful)** | What happens, what can be measured, or what a specified protocol accomplishes | Particularly useful for physically named classes such as correctable errors. State the protocol, scope, and quantifiers needed to make the criterion exact. |
+| **Action on inputs** | The output associated with each admissible input | Natural for maps and transformations. Explain the input/output meaning and any projection, conditioning, or normalization. A set-membership test is unnecessary. |
+| **Explicit construction or formula** | A span, sum, kernel, projection, composition, or other unambiguous construction | Appropriate when it is the clearest specification or no simpler operational characterization is established. Explain why this object is used; construction alone is not a defect. |
+| **Structural or implicit characterization** | Equations, symmetries, or properties that characterize the object | State the domain and establish existence or uniqueness when the claim needs them; distinguish defining a class from selecting one member. |
+| **Variational characterization** | An extremum of a stated functional over an admissible class | Explain the physical objective and constraints; distinguish the optimal value from an optimizer and address nonuniqueness when relevant. |
+| **Convention or representation choice** | A chosen basis, frame, normalization, or representative | Declare the choice and track its consequences under [math.md](math.md) Type 4; do not pretend the convention is a unique physical fact. |
 
----
+## Presentation and equivalence
 
-## Diagnostic vs generation
+Lead the story with the physical question or role, then give the precise definition in the form that serves it best. A short explanation immediately after a compact formula is also acceptable when that order reads naturally. Judge the local passage, not just the first sentence inside the definition environment.
 
-Whether a lead is physical is always decidable (run **Physical lead** below). What the criterion *should say* is not always known.
-
-- If the diagnostic fails and no honest criterion is available: **do not invent one** and **do not ship the recipe as the definition**.
-- If an operational criterion can be stated honestly: write definition layering (criterion → labeling/computation → coincidence pointer).
-
----
-
-## When this file applies
-
-Run the checks when the statement **names** a subspace, event, resource, or other object that advertises a physical or protocol role.
-
-**N/A:** purely formal bookkeeping (an index set, a projector symbol), [math.md](math.md) Type 4 convention choices, and derived computations of an object already motivated. A name that advertises a physical or protocol role is never N/A just because the formula is well-defined.
-
-No halt, and no new criterion, when the passage only *uses* an already-defined term.
-
----
+When an operational characterization and a mathematical construction are both given, distinguish what is defined from what is asserted about it. Justify a nontrivial equivalence, with assumptions and a proof or reference as appropriate. An immediate equivalence needs at most a short explanation; a separate lemma or supplement is not mandatory. Physical interpretation may clarify a definition without itself uniquely defining the object; do not silently promote that interpretation into an equivalent criterion.
 
 ## Checks
 
-Run in order.
-
 | Check | What to verify |
 |-------|----------------|
-| **Physical lead** | For each newly named object in the physics or protocol story: write the membership sentence **with the recipe deleted**. Can a reader decide membership from that sentence without the indexing, spanning, or direct-sum recipe? If the sentence is empty, or the lead *is* the recipe, fail. Do not invent a criterion you cannot stand behind. Artifact: **Membership without recipe**. |
-| **Definition layering** | Order in the text: criterion, then labeling/computation, then a pointer to the coincidence proof. Do not prove coincidence inside the definition. |
+| **Physical lead** | Produce **Physical meaning and definition choice**. Does the surrounding prose establish a useful physical role, and was a definition through that meaning considered? A supported role plus any suitable precise definition passes. A bare formula with no intelligible role invites better motivation; its mathematical form alone is not a failure. |
+| **Definition layering** | Are role, precise definition, and any claimed characterization connected in an order the reader can follow? Check nontrivial equivalences, but do not demand criterion → construction → lemma for every object. |
 
-Related Type 2 checks that are not physical-lead-specific (negative-space, first-use, back-translation, round-trip, quantifiers, ordering) live in [math.md](math.md).
+Related faithfulness, round-trip, quantifier, and ordering checks live in [math.md](math.md). A round-trip check applies to prose offered as an exact characterization; a motivation sentence need not determine the formula uniquely.
 
----
+## Missing meaning and genuine ambiguity
 
-## Worked example — construction-as-definition vs physical lead
+- Do not invent physical meaning, a membership criterion, or an equivalence that the supplied science does not support.
+- If the formula defines the object clearly but the physical motivation is thin, preserve the valid definition, add only a supported explanation, and identify any remaining presentation gap. Lack of an independent operational definition is not a reason to stop.
+- If completing or changing the definition requires choosing between materially different physical meanings, identify the unresolved choice. Ask the author only when the context cannot resolve it; continue independent edits. The editing skills' **Definition halt** covers this scientific ambiguity, not a preference for a different definition form.
 
-*Setup.* A QEC protocol measures syndrome operators \(\{\hat{S}_i\}\), obtains a record \(\mathbf{s}\), and applies a recovery. The paper needs a name for the set of errors the protocol is meant to correct.
+## Contrasting examples
 
-*Construction-as-definition (fail):*
-> “The \(\mathfrak{Q}\)-correctable errors are the linear span of the operators \(\{\hat{E}_{\mathbf{s}}\}\) labeled by syndromes in \(\mathbb{S}\).”
+**Correctable errors — prefer the operational characterization.** For a fixed recovery protocol, define correctability through restoration of every logical state after the error. This directly explains the physical promise of the name. A spanning construction may still define a set of errors, but calling that entire span correctable requires support; do not infer that claim from the labels alone.
 
-The lead *is* a spanning recipe. A reader cannot decide membership without the labels. The formula may be accurate and still fail physical lead.
+**Effective logical map — action or construction can be the best definition.** For a normalized logical input, explain that the map returns the unnormalized logical block of the final state; its trace gives the probability of finding the output in the logical subspace. Defining it by projection of the full channel is then both precise and physically intelligible. No independent membership test is needed. Endpoint projection retains excursions that leave and later return; do not describe it as forbidding leakage throughout the evolution.
 
-*Physically led (shape):*
-> “An error is \(\mathfrak{Q}\)-correctable when the protocol restores every logical state after that error. We label those errors by the syndromes they trigger; that the labeled set coincides with the restore-able set is shown in Lemma …”
-
-Criterion (what the protocol does to the system) precedes labeling. Coincidence is a derived claim.
-
-A posited *condition* on protocols (not a newly named object) is Type 2 in [math.md](math.md); physical lead is N/A there. The consistency-condition example in that file is the companion case.
+These cases require the same physical consideration and legitimately lead to different definition forms.

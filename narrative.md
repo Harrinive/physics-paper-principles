@@ -31,8 +31,8 @@ Sentence-scale wording is [sentence.md](sentence.md). These groups ask whether t
   Detect: same **speech-act** test as sentence 7 at unit scale. Artifact: **Speech-act**.
 - **Prose vs math** — language carries motivation, connections, physical interpretation, and understanding; math carries definitions, relations, and formal claims. Flag passages that describe in words what should be stated as math. For posited statements, motivation before the formula; back-translation / round-trip / unfaithful prose are [math.md](math.md) Type 2.
   Detect: delete-the-paraphrase at passage scale. Artifact: **Reverse outline**.
-- **Physical lead on named objects** — a correct construction is not a definition of a physical or protocol object. State an operational membership criterion before the labeling recipe ([physical-lead.md](physical-lead.md)). If the criterion is absent, flag — do not invent it.
-  Detect: **membership without recipe** on each newly named object. Artifact: **Membership without recipe**.
+- **Physical lead on named objects** — let the physical role guide the choice of definition ([physical-lead.md](physical-lead.md)). Prefer defining through physical meaning when that is precise and illuminating; other forms are valid. Assess motivation and interpretation across the local passage, not only inside the definition environment.
+  Detect: **Physical meaning and definition choice** for each newly named object. Artifact: **Physical meaning and definition choice**.
 - **Signposting and transitions** — roadmaps, summaries, forward/back references; flag abrupt jumps. Cross-boundary reminders follow sentence principle 2: if the reminder is hard to phrase, the referenced item is too minor or too distant.
   Detect: inventory `however` / `thus` / `therefore` / `conversely`; each must be licensed by the because-chain. Artifact: **Connective inventory**.
 - **Confusion-on-first-read ordering** — apply sentence principle 13 at passage scale. A unit that stacks several Tier-2/3 sentences has an ordering problem even if each sentence is locally grammatical. Same three tiers (deferred & flagged / resolved next sentence / never or much later).

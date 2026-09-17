@@ -17,7 +17,7 @@ For every definition, condition, equation, lemma, theorem, or model in the passa
 | Type | Description | Criterion to verify |
 |------|-------------|---------------------|
 | **Derived** | Follows from earlier statements by logical deduction. | Rigor — is the conclusion forced by the premises? |
-| **Posited** | Given as a starting point: definitions, conditions, models, axioms. | Faithfulness **and** physical lead — does the formula encode a stated operational intent, not only a construction? |
+| **Posited** | Given as a starting point: definitions, conditions, models, axioms. | Faithfulness **and** physical lead — is the definition precise, is its physical role explained, and does any claimed characterization agree with it? |
 | **Imported** | Cited result, experimental fact, or conjecture from outside the paper's deductive chain. | Provenance — is the source identified, applicable, and correctly invoked? |
 | **Convention choice** | A choice among equivalent alternatives: canonical representative, gauge/basis fixing, sign or normalization convention. | Legitimacy — does the choice exist, and are downstream results independent of it? |
 
@@ -44,22 +44,22 @@ Run every check below in order.
 
 ## Type 2 checks (Posited)
 
-Posited statements must be purpose-first: intent → natural-language statement → formalization. That is not enough when the "intent" *is* the construction. **Named objects in the physical or protocol story** must be **physically led** — full statement in [physical-lead.md](physical-lead.md).
+Posited statements should make their purpose intelligible alongside their formalization. For **named objects in the physical or protocol story**, consider physical meaning before choosing a definition; prefer an operational characterization when useful, while allowing the other forms in [physical-lead.md](physical-lead.md). Motivation need not uniquely determine the formula.
 
-**Required products:** **Independent formalization** (round-trip); **Excluded pathology** (negative-space, in words); **Membership without recipe** if the statement names a physical or protocol object.
+**Required products:** **Independent formalization** (round-trip, for prose offered as an exact characterization); **Excluded pathology** (negative-space, where applicable); **Physical meaning and definition choice** if the statement names a physical or protocol object.
 
 Run every check below in order.
 
 | Check | What to verify |
 |-------|----------------|
-| **Physical lead** | If the statement names a physical or protocol object: [physical-lead.md](physical-lead.md). If the lead sentence *is* the recipe, fail. Do not write a criterion you cannot stand behind. N/A for a posited *condition* that does not name such an object. |
-| **Definition layering** | For named objects: criterion, then labeling/computation, then a pointer to the coincidence proof ([physical-lead.md](physical-lead.md)). Do not prove coincidence inside the definition. |
-| **Negative-space question** | What pathology does this condition exclude? Name it in words. If it cannot be named, the intent is not yet understood — flag and ask the author. |
+| **Physical lead** | For named physical/protocol objects, run [physical-lead.md](physical-lead.md): consider meaning first and choose a suitable definition form. Construction is permitted. N/A for a posited condition that does not name such an object. |
+| **Definition layering** | Apply [physical-lead.md](physical-lead.md): connect role, definition, and any claimed characterization. Justify nontrivial equivalences; no mandatory separate lemma or fixed three-stage order. |
+| **Negative-space question** | For a restrictive condition or physical class, what does it exclude, and why? For an action, construction, or convention, state its intended use instead when exclusion is not the point; mark pathology N/A with that reason. Do not invent a pathology to justify a valid definition. |
 | **First-use test** | Where is this statement first used downstream? The motivation should foreshadow that use. If the gap is large, consider moving the statement adjacent to its first use. |
-| **Back-translation flag** | Does the motivating prose read as a literal gloss of the formula's syntax ("for every … there exists …")? If so, flag it: the prose was likely back-translated from the formula rather than written from intent. Intent must be expressible symbol-free. Distinct from **Physical lead**: a faithful gloss of a recipe can still fail physical lead. |
-| **Round-trip test** | Formalize the natural-language sentence alone, without looking at the actual formula. Compare. Any mismatch (different quantifier order, different inclusion direction, different domain) means the prose is unfaithful. Fix the prose, not the formula. |
+| **Back-translation flag** | Does the prose merely recite formula syntax without helping the reader understand its role? Prefer a supported physical explanation. An action-based description or a concise explanatory gloss can be useful; do not reject it simply because it follows the formula. |
+| **Round-trip test** | For prose offered as an exact definition or equivalent characterization, formalize it independently and compare domains, quantifiers, and meaning. Fix a mismatch without silently changing the intended definition. For motivation or partial interpretation, check compatibility and scope; mark exact round-trip N/A rather than demanding unique reconstruction of the formula. |
 | **Quantifier audit** | Verify quantifier order matches intent (∀∃ vs ∃∀ are different conditions). Check that ∝ excludes zero, that existential witnesses are nontrivial (no empty sets, no trivially satisfying objects). |
-| **Ordering in the text** | Motivation — and, for named physical objects, the operational criterion — must appear before formalization and before the computational recipe. A formula introduced before its purpose is explained is a Tier-3 confusion-on-first-read problem ([sentence.md](sentence.md) principle 13). |
+| **Ordering in the text** | Prefer physical role before formalization, allowing a concise interpretation immediately after a formula when clearer. Earlier nearby motivation counts. Use the actual first-read confusion and resolution to assign sentence principle 13 tiers; formula-first is not automatically Tier 3. |
 
 ---
 
