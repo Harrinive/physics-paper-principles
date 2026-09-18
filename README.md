@@ -13,9 +13,9 @@ This skill is **canon**, not a workflow. It states sentence, passage, math, and 
 Install as **sibling folders** under your skills directory (see the [Cursor Skills docs](https://cursor.com/docs/context/skills)):
 
 ```bash
-git clone https://github.com/Harrinive/physics-paper-principles.git ~/.cursor/skills/physics-paper-principles
-git clone https://github.com/Harrinive/physics-paper-editing.git ~/.cursor/skills/physics-paper-editing
-git clone https://github.com/Harrinive/physics-paper-editing-section.git ~/.cursor/skills/physics-paper-editing-section
+git clone https://github.com/Harrinive/physics-paper-principles.git ~/.agents/skills/physics-paper-principles
+git clone https://github.com/Harrinive/physics-paper-editing.git ~/.agents/skills/physics-paper-editing
+git clone https://github.com/Harrinive/physics-paper-editing-section.git ~/.agents/skills/physics-paper-editing-section
 ```
 
 `physics-paper-principles` can be used alone. The editing skills require this folder as a sibling (`../physics-paper-principles/` links).
@@ -34,7 +34,7 @@ If you also port the coworker loop, keep this skill as a **sibling folder** and 
 
 | Platform | Install path (typical) | Use this to adapt |
 |----------|------------------------|-------------------|
-| **Cursor** | `~/.cursor/skills/<name>/` | [Cursor Skills docs](https://cursor.com/docs/context/skills) |
+| **Cursor** | `~/.cursor/skills/<name>/` or `~/.agents/skills/<name>/` | [Cursor Skills docs](https://cursor.com/docs/context/skills) |
 | **Claude Code** | `~/.claude/skills/<name>/` or `.claude/skills/<name>/` | [Claude Code skills docs](https://code.claude.com/docs/en/skills) |
 | **OpenAI Codex** | `~/.agents/skills/<name>/` or `.agents/skills/<name>/` (`~/.codex/skills/` legacy) | [Codex Agent Skills](https://developers.openai.com/codex/skills) |
 | **GitHub Copilot** | `~/.copilot/skills/<name>/` or `~/.agents/skills/<name>/`; project: `.github/skills/<name>/` or `.agents/skills/<name>/` | [Copilot: add skills](https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/add-skills) |
