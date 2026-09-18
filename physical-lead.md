@@ -8,11 +8,11 @@
 
 Before drafting or judging the definition, complete this assessment:
 
-1. Identify what the object describes, measures, predicts, or enables in this setting. Use the surrounding manuscript; an existing explanation need not be repeated inside a definition environment.
+1. Identify what the object describes, measures, predicts, or enables in this setting, and its category (for example, state, map, scalar quantity, event or record, or coordinate/representation choice). Use the surrounding manuscript; an existing explanation need not be repeated inside a definition environment.
 2. Actively consider a definition in terms of that physical meaning. For a class of states or errors, ask what qualifies; for a map, ask what input becomes what output; for a quantity, ask what it measures. Prefer this form when it is precise and makes the concept easier to understand.
 3. Choose the clearest faithful form below. If another form works better, record briefly why in the review notes: for example, the action already specifies the physics, the construction is transparent, or an operational equivalence needs assumptions not established here. Do not manufacture an operational criterion merely to satisfy the preference.
 
-**Required artifact: Physical meaning and definition choice** — physical role; whether a useful operational definition is available; chosen form and a brief reason. This is a drafting/review aid, not boilerplate to insert in the paper or a demand to expose a long deliberation. For purely formal bookkeeping, state its mathematical role and mark the operational preference N/A.
+**Required artifact: Physical meaning and definition choice** — physical role and category; whether a useful operational definition is available; chosen name and form with a brief reason. This is a drafting/review aid, not boilerplate to insert in the paper or a demand to expose a long deliberation. For purely formal bookkeeping, state its mathematical role and mark the operational preference N/A.
 
 ## Legitimate ways to define an object
 
@@ -33,11 +33,15 @@ Lead the story with the physical question or role, then give the precise definit
 
 When an operational characterization and a mathematical construction are both given, distinguish what is defined from what is asserted about it. Justify a nontrivial equivalence, with assumptions and a proof or reference as appropriate. An immediate equivalence needs at most a short explanation; a separate lemma or supplement is not mandatory. Physical interpretation may clarify a definition without itself uniquely defining the object; do not silently promote that interpretation into an equivalent criterion.
 
+## Names must preserve distinctions
+
+Choose a name that signals the object’s category and the mechanism it identifies. Do not use parallel names merely because two constructions appear nearby: symmetry in wording should follow a supported symmetry in the physics. Likewise, do not rename a representational choice as a physical operation, a probability weight as a channel, or a record label as the state it labels. If a short name hides a required qualification, use a plainer description until the distinction can be defined faithfully.
+
 ## Checks
 
 | Check | What to verify |
 |-------|----------------|
-| **Physical lead** | Produce **Physical meaning and definition choice**. Does the surrounding prose establish a useful physical role, and was a definition through that meaning considered? A supported role plus any suitable precise definition passes. A bare formula with no intelligible role invites better motivation; its mathematical form alone is not a failure. |
+| **Physical lead** | Produce **Physical meaning and definition choice**. Does the surrounding prose establish a useful physical role and category, and was a definition through that meaning considered? Does the name preserve the category and distinguish the mechanism without a false symmetry? A supported role plus any suitable precise definition passes. A bare formula with no intelligible role invites better motivation; its mathematical form alone is not a failure. |
 | **Definition layering** | Are role, precise definition, and any claimed characterization connected in an order the reader can follow? Check nontrivial equivalences, but do not demand criterion → construction → lemma for every object. |
 
 Related faithfulness, round-trip, quantifier, and ordering checks live in [math.md](math.md). A round-trip check applies to prose offered as an exact characterization; a motivation sentence need not determine the formula uniquely.

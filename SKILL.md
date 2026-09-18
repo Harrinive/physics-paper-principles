@@ -45,17 +45,17 @@ When **`physics-paper-editing`** is also attached, that skill’s first-reply an
 
 ## Principle map
 
-Four layers. Numeric IDs match the detail files (sentence **1–14**, narrative **groups 1–4**, math **types 0–4**).
+Four layers. Numeric IDs match the detail files (sentence **1–15**, narrative **groups 1–4**, math **types 0–4**).
 
 | Layer | Question | File |
 |-------|----------|------|
 | **Sentence** | Does each sentence say one clear thing, in an order a reader can follow? | [sentence.md](sentence.md) |
 | **Passage** | Does the unit have one message and a logical arc? | [narrative.md](narrative.md) |
 | **Math** | Is every statement well-typed and logically/faithfully stated? | [math.md](math.md) |
-| **Named objects** | Has the physical meaning guided the choice of a precise definition? | [physical-lead.md](physical-lead.md) |
+| **Named objects** | Have physical role and category guided a precise, mechanism-distinguishing name and definition? | [physical-lead.md](physical-lead.md) |
 
 ```
-Sentence (1–14) ─┬─ Passage groups 1–4
+Sentence (1–15) ─┬─ Passage groups 1–4
                  └─ Math types 0–4 ── Physical lead (named objects)
 ```
 
@@ -66,10 +66,12 @@ Sentence (1–14) ─┬─ Passage groups 1–4
 | Pronouns, SVO, voice, “For A, it does B”, clause-must-claim | sentence **1, 4, 9, 10, 14** |
 | Cross-boundary reminders | sentence **2** (passage-scale: narrative group 2 signposting) |
 | Undefined terminology | sentence **3** |
+| Standard meaning of terminology | sentence **15** |
 | Declare setup; do not hypothesize | sentence **7** (passage-scale: narrative group 2 model setup) |
 | Confusion-on-first-read ordering (tiers 1–3) | sentence **13** |
 | Prose vs math | sentence **12** + math Type 2 |
-| Physical lead / definition choice | [physical-lead.md](physical-lead.md) |
+| Physical role, category, and definition choice | [physical-lead.md](physical-lead.md) |
+| Approximation claims | [math.md](math.md) “Approximation claims” |
 | Purpose and formalization (role alongside a precise definition) | [math.md](math.md) Type 2 |
 | Detect tests (how to see a violation) | Detect column in [sentence.md](sentence.md); Detect lines in [narrative.md](narrative.md); Required products in [math.md](math.md) |
 
@@ -95,7 +97,7 @@ Consider physical meaning before choosing a definition. Prefer an operational ch
 | File | Role |
 |------|------|
 | **SKILL.md** | Map, litmus, pairing |
-| [sentence.md](sentence.md) | 14 sentence principles + Detect column |
+| [sentence.md](sentence.md) | 15 sentence principles + Detect column |
 | [narrative.md](narrative.md) | Four passage-level groups + Detect lines |
 | [math.md](math.md) | Statement types, type-specific checks, Required products |
 | [physical-lead.md](physical-lead.md) | Physical meaning first; multiple legitimate definition forms |

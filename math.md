@@ -2,7 +2,7 @@
 
 **For agents:** Start with [SKILL.md](SKILL.md). Open whenever the text has mathematical objects, equations, or logical arguments — any length. Consider the snippet plus surrounding and earlier paper text.
 
-**Run Step 0 first**, then the checks for each statement's type. Name every check; state how it applies. If N/A: not applicable, and why.
+**Run Step 0 first**, then the checks for each statement's type and, when applicable, the approximation-claims checks. Name every check; state how it applies. If N/A: not applicable, and why.
 
 Each type lists **Required products** — the artifacts that make the checks visible. Coworker-loop **math workers** run the inverted workflow in **`physics-paper-editing`** (artifact first, then the checks listed under it).
 
@@ -21,6 +21,19 @@ For every definition, condition, equation, lemma, theorem, or model in the passa
 | **Imported** | Cited result, experimental fact, or conjecture from outside the paper's deductive chain. | Provenance — is the source identified, applicable, and correctly invoked? |
 | **Convention choice** | A choice among equivalent alternatives: canonical representative, gauge/basis fixing, sign or normalization convention. | Legitimacy — does the choice exist, and are downstream results independent of it? |
 
+## Approximation claims
+
+Run this check after the type-specific checks whenever a statement neglects, projects out, averages, truncates, or otherwise approximates part of a physical or mathematical description. The model condition that licenses the approximation and the resulting approximate claim can have different types; assess both where relevant.
+
+**Required product: Approximation ledger** — the retained construction; the discarded, averaged, or projected content; the physical mechanism and regime that support the omission; whether any probability or error bound is input-conditioned or uniform; and the resulting claim’s stated strength.
+
+| Check | What to verify |
+|-------|----------------|
+| **Changed object** | State the mathematical operation that makes the approximation and what it no longer represents. Do not present a projection, dephasing, truncation, or conditioning as an exact identity. |
+| **Mechanism and regime** | Identify the physical mechanism that produces the discarded content and the condition that makes it negligible. If several mechanisms produce the same content, the stated regime must cover them or the limitation must remain explicit. |
+| **Quantitative scope** | Tie a quoted probability, error rate, or bound to its input, conditioning event, time interval, and quantifier. Distinguish a value for one input from a uniform bound over an admissible class. |
+| **Claim strength** | Match the conclusion to the ledger and evidence: an approximation is marked as such, and a numerical observation is not promoted to a proof. |
+
 ---
 
 ## Type 1 checks (Derived)
@@ -33,7 +46,7 @@ Run every check below in order.
 |-------|----------------|
 | **Scope and well-definedness** | Objects defined before use; choices canonical or justified; existence/uniqueness clear; domains and ranges stated or obvious. |
 | **Logical completeness** | No unjustified leaps; conclusions do not need unstated assumptions. |
-| **Definitions and notation** | No symbol overload; definitions not silently changed; local notation matches global conventions. |
+| **Definitions and notation** | No symbol overload; definitions not silently changed; local notation matches global conventions. Field-standard term meaning is sentence **15**, not this check. |
 | **Quantifiers and generalizations** | "For all …" backed for all cases, not only examples. |
 | **Implicit assumptions** | Commutativity, invertibility, finiteness, independence, etc. declared where needed. |
 | **Direction of implications** | "If and only if" vs "if"; equivalences bidirectional when claimed; conclusion follows from premises. |
