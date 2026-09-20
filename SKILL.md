@@ -5,14 +5,17 @@ description: >-
   narrative arc, physically led definitions, and math-logic types. Use when
   writing or reviewing physics-paper LaTeX. Pair with physics-paper-editing
   for the coworker-loop workflow and physics-paper-editing-section for whole
-  sections. Not a process skill — no marks, Tasks, or merge.
+  sections. Not a process skill — no marks, orchestration, or merge.
+compatibility: >-
+  Agent Skills-compatible reference content. Requires only linked-file reading;
+  designed for Cursor, Codex, and Claude Code.
 ---
 
 # Physics paper principles
 
 **Domain rules** for what good physics/mathematics prose looks like. Pair with **`physics-paper-editing`** (short-passage coworker loop) and **`physics-paper-editing-section`** (whole-section orchestrator).
 
-**Not in scope:** marks, snapshots, verifier Tasks, `OVERALL`, merge, or pace — those live in the editing skills.
+**Not in scope:** marks, snapshots, verifier orchestration, `OVERALL`, merge, or pace — those live in the editing skills.
 
 **Litmus test (every principle):** Would this still apply if the coworker loop, construction marks, and background checkers disappeared?
 
@@ -112,6 +115,6 @@ Consider physical meaning before choosing a definition. Prefer an operational ch
 
 ## Out of scope
 
-- Marks, snapshots, verifier Tasks, `OVERALL`, merge, pace, fast-polish scoping
+- Marks, snapshots, verifier jobs, `OVERALL`, merge, pace, fast-polish scoping
 - BibTeX, figure files, or equations-only blocks with no prose claims
 - Inventing physical meaning or an operational equivalence unsupported by the supplied science
