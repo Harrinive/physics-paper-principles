@@ -1,61 +1,120 @@
-# Named physical and protocol objects
+# Physics-led object choice
 
-**For agents:** Start with [SKILL.md](SKILL.md). Open when the passage introduces or rewrites a named object in the physics or protocol story.
+Open this file whenever a passage introduces, renames, normalizes, factors, or
+materially redefines a **story-bearing object**. The trigger is the object's role
+in the argument, not whether it sounds explicitly physical.
 
-**Think about the physical meaning before choosing or retaining the definition.** Prefer defining an object by its physical behavior or operational role when that gives a precise, useful characterization. Mathematical constructions are also legitimate definitions. The requirement is a physically intelligible story and a faithful definition, not one mandatory definition form.
+## Physics first
 
-## Physical meaning first
+Before accepting a definition, identify the quantity the physical or protocol
+argument naturally needs. Record internally:
 
-Before drafting or judging the definition, complete this assessment:
+1. **Role and category** — what the object describes, measures, predicts,
+   bounds, or enables; whether it is a state, map, scalar, event, record,
+   convention, representation, or formal helper.
+2. **Scope** — per event, interval, run, round, trajectory, or full protocol.
+3. **Dimensions and scaling** — units, small parameters, extensive factors, and
+   every prefactor included or excluded.
+4. **Definition payoff** — what the name or normalization makes easier to state,
+   compare, reuse, or analyze.
+5. **Use pattern** — first use, later reuse, and whether the object is discussed
+   independently of the quantity from which it was factored.
+6. **Disposition** — keep, rename, absorb a factor, inline, or remove.
 
-1. Identify what the object describes, measures, predicts, or enables in this setting, and its category (for example, state, map, scalar quantity, event or record, or coordinate/representation choice). Use the surrounding manuscript; an existing explanation need not be repeated inside a definition environment.
-2. Actively consider a definition in terms of that physical meaning. For a class of states or errors, ask what qualifies; for a map, ask what input becomes what output; for a quantity, ask what it measures. Prefer this form when it is precise and makes the concept easier to understand.
-3. Choose the clearest faithful form below. If another form works better, record briefly why in the review notes: for example, the action already specifies the physics, the construction is transparent, or an operational equivalence needs assumptions not established here. Do not manufacture an operational criterion merely to satisfy the preference.
+This **object ledger** is a drafting/review aid, not boilerplate for the paper.
 
-**Required artifact: Physical meaning and definition choice** — physical role and category; whether a useful operational definition is available; chosen name and form with a brief reason. This is a drafting/review aid, not boilerplate to insert in the paper or a demand to expose a long deliberation. For purely formal bookkeeping, state its mathematical role and mark the operational preference N/A.
+## Three diagnostics
 
-## Legitimate ways to define an object
+### Factor round-trip
 
-Forms can be combined; choose for the object and audience.
+If a definition strips off a factor and the next sentence immediately restores
+it, ask what independent meaning the reduced object has. Absorb the factor into
+the defined quantity when the split only makes the reader travel out and back.
 
-| Form | What defines the object | When it helps / what to check |
-|------|-------------------------|-----------------------------|
-| **Physical or operational characterization (preferred when useful)** | What happens, what can be measured, or what a specified protocol accomplishes | Particularly useful for physically named classes such as correctable errors. State the protocol, scope, and quantifiers needed to make the criterion exact. |
-| **Action on inputs** | The output associated with each admissible input | Natural for maps and transformations. Explain the input/output meaning and any projection, conditioning, or normalization. A set-membership test is unnecessary. |
-| **Explicit construction or formula** | A span, sum, kernel, projection, composition, or other unambiguous construction | Appropriate when it is the clearest specification or no simpler operational characterization is established. Explain why this object is used; construction alone is not a defect. |
-| **Structural or implicit characterization** | Equations, symmetries, or properties that characterize the object | State the domain and establish existence or uniqueness when the claim needs them; distinguish defining a class from selecting one member. |
-| **Variational characterization** | An extremum of a stated functional over an admissible class | Explain the physical objective and constraints; distinguish the optimal value from an optimizer and address nonuniqueness when relevant. |
-| **Convention or representation choice** | A chosen basis, frame, normalization, or representative | Declare the choice and track its consequences under [math.md](math.md) Type 4; do not pretend the convention is a unique physical fact. |
+Do not apply this mechanically. A reduced object earns its separation when its
+normalization is standard, it is reused independently, it exposes parameter
+dependence or asymptotics, or it enables meaningful comparisons.
 
-## Presentation and equivalence
+### Inline-substitution test
 
-Lead the story with the physical question or role, then give the precise definition in the form that serves it best. A short explanation immediately after a compact formula is also acceptable when that order reads naturally. Judge the local passage, not just the first sentence inside the definition environment.
+Substitute the proposed definition at every use in the local argument. If the
+argument becomes shorter or physically clearer, do not introduce the symbol.
+Retain it when substitution obscures a recurring structure or burdens several
+later statements.
 
-When an operational characterization and a mathematical construction are both given, distinguish what is defined from what is asserted about it. Justify a nontrivial equivalence, with assumptions and a proof or reference as appropriate. An immediate equivalence needs at most a short explanation; a separate lemma or supplement is not mandatory. Physical interpretation may clarify a definition without itself uniquely defining the object; do not silently promote that interpretation into an equivalent criterion.
+### Payoff test
 
-## Names must preserve distinctions
+A helper earns a name when at least one substantive payoff is present:
 
-Choose a name that signals the object’s category and the mechanism it identifies. Do not use parallel names merely because two constructions appear nearby: symmetry in wording should follow a supported symmetry in the physics. Likewise, do not rename a representational choice as a physical operation, a probability weight as a channel, or a record label as the state it labels. If a short name hides a required qualification, use a plainer description until the distinction can be defined faithfully.
+- repeated use beyond immediate substitution;
+- independent comparison across regimes or parameters;
+- a useful limit, scaling law, asymptotic, or recurrence;
+- a standard object recognized by the intended audience;
+- compression of a genuinely recurring formal structure;
+- a later theorem, bound, or construction that treats it independently.
 
-## Checks
+Being algebraically valid is not a payoff.
 
-| Check | What to verify |
-|-------|----------------|
-| **Physical lead** | Produce **Physical meaning and definition choice**. Does the surrounding prose establish a useful physical role and category, and was a definition through that meaning considered? Does the name preserve the category and distinguish the mechanism without a false symmetry? A supported role plus any suitable precise definition passes. A bare formula with no intelligible role invites better motivation; its mathematical form alone is not a failure. |
-| **Definition layering** | Are role, precise definition, and any claimed characterization connected in an order the reader can follow? Check nontrivial equivalences, but do not demand criterion → construction → lemma for every object. |
+## Definition forms
 
-Related faithfulness, round-trip, quantifier, and ordering checks live in [math.md](math.md). A round-trip check applies to prose offered as an exact characterization; a motivation sentence need not determine the formula uniquely.
+Choose the clearest faithful form; forms may be combined.
 
-## Missing meaning and genuine ambiguity
+| Form | Appropriate use |
+|---|---|
+| Physical or operational | What is measured, observed, or accomplished by a stated protocol |
+| Action on inputs | Maps and transformations whose input-output behavior carries the meaning |
+| Explicit construction | Sums, spans, kernels, projections, compositions, or scalar formulas |
+| Structural or implicit | Equations, symmetries, or properties that characterize the object |
+| Variational | An optimum over a stated admissible set and objective |
+| Convention or representation | Basis, frame, normalization, sign, or representative choice |
 
-- Do not invent physical meaning, a membership criterion, or an equivalence that the supplied science does not support.
-- If the formula defines the object clearly but the physical motivation is thin, preserve the valid definition, add only a supported explanation, and identify any remaining presentation gap. Lack of an independent operational definition is not a reason to stop.
-- If completing or changing the definition requires choosing between materially different physical meanings, identify the unresolved choice. Ask the author only when the context cannot resolve it; continue independent edits. The editing skills' **Definition halt** covers this scientific ambiguity, not a preference for a different definition form.
+Operational form is preferred only when it is precise and illuminating. Never
+invent a criterion or equivalence to make a construction look operational.
 
-## Contrasting examples
+## Narrative order
 
-**Correctable errors — prefer the operational characterization.** For a fixed recovery protocol, define correctability through restoration of every logical state after the error. This directly explains the physical promise of the name. A spanning construction may still define a set of errors, but calling that entire span correctable requires support; do not infer that claim from the labels alone.
+Normally present:
 
-**Effective logical map — action or construction can be the best definition.** For a normalized logical input, explain that the map returns the unnormalized logical block of the final state; its trace gives the probability of finding the output in the logical subspace. Defining it by projection of the full channel is then both precise and physically intelligible. No independent membership test is needed. Endpoint projection retains excursions that leave and later return; do not describe it as forbidding leakage throughout the evolution.
+1. the physical question or quantity needed;
+2. its precise definition;
+3. a closed form or useful representation;
+4. how it enters the next scale of the argument.
 
-These cases require the same physical consideration and legitimately lead to different definition forms.
+A compact formula may precede its interpretation when that reads more clearly,
+provided the local passage establishes the role and the object passes the three
+diagnostics.
+
+## Quality decision
+
+`physics_lead: PASS` requires all of the following:
+
+- the physically native quantity and scope are identifiable;
+- the name preserves the object's category and mechanism;
+- included and excluded factors are intentional;
+- every helper has an explanatory or computational payoff;
+- definition, interpretation, and claimed equivalences agree.
+
+Use `FIX` when the science is known but the object choice is needlessly indirect,
+for example an unearned helper or factor round-trip. Use `USER_DECISION` only
+when completing the definition requires choosing between materially different
+scientific meanings that the supplied context cannot resolve.
+
+## Contrasting factor examples
+
+Suppose interval weights contain a common factor \(\theta^2\). If a reduced sum
+\(S_m(\lambda)\) is introduced once and immediately appears only as
+\(\theta^2S_m(\lambda)\), define the total one-round weight instead: it is the
+quantity used by the protocol argument. The reduced sum has not earned a name.
+
+Keep \(S_m(\lambda)\) separate when later discussion compares its
+\(\lambda\)-dependence, evaluates a special limit, proves a recurrence, or uses
+the same normalized function in several protocol-level quantities. The rule is
+not "always absorb prefactors"; it is "name the quantity that carries the
+story, and require a payoff for every auxiliary decomposition."
+
+## Missing meaning
+
+- Preserve a valid construction when its physical role is supported, even if no
+  independent operational criterion exists.
+- Improve thin motivation when the manuscript supplies the meaning.
+- Do not resolve genuine scientific ambiguity by stylistic preference.

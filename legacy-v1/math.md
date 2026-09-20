@@ -1,16 +1,12 @@
 # Math and logic principles
 
-**For agents:** Start with [SKILL.md](SKILL.md). Open whenever the text has mathematical objects, equations, or logical arguments — any length. Consider the snippet plus surrounding and earlier paper text.
+**For agents:** Start with [LEGACY.md](LEGACY.md). Open whenever the text has mathematical objects, equations, or logical arguments — any length. Consider the snippet plus surrounding and earlier paper text.
 
-Classify each changed mathematical statement, then run only the checks required
-by its type and the actual edit. Record a compact **math delta** rather than
-enumerating unused checks or `N/A` fields.
+**Run Step 0 first**, then the checks for each statement's type and, when applicable, the approximation-claims checks. Name every check; state how it applies. If N/A: not applicable, and why.
 
 Each type lists **Required products** — the artifacts that make the checks visible. Coworker-loop **math workers** run the inverted workflow in **`physics-paper-editing`** (artifact first, then the checks listed under it).
 
-Any new or changed story-bearing object—including normalized quantities,
-weights, generating functions, bounds, and formal helpers—also triggers
-[physical-lead.md](physical-lead.md).
+Named objects in the physical or protocol story: run [physical-lead.md](physical-lead.md) in addition to Type 2 below.
 
 ---
 
@@ -21,7 +17,7 @@ For every definition, condition, equation, lemma, theorem, or model in the passa
 | Type | Description | Criterion to verify |
 |------|-------------|---------------------|
 | **Derived** | Follows from earlier statements by logical deduction. | Rigor — is the conclusion forced by the premises? |
-| **Posited** | Given as a starting point: definitions, conditions, models, axioms. | Faithfulness **and** physics lead — is the definition precise, is its role explained, is the chosen quantity earned, and does any claimed characterization agree with it? |
+| **Posited** | Given as a starting point: definitions, conditions, models, axioms. | Faithfulness **and** physical lead — is the definition precise, is its physical role explained, and does any claimed characterization agree with it? |
 | **Imported** | Cited result, experimental fact, or conjecture from outside the paper's deductive chain. | Provenance — is the source identified, applicable, and correctly invoked? |
 | **Convention choice** | A choice among equivalent alternatives: canonical representative, gauge/basis fixing, sign or normalization convention. | Legitimacy — does the choice exist, and are downstream results independent of it? |
 
@@ -61,23 +57,15 @@ Run every check below in order.
 
 ## Type 2 checks (Posited)
 
-Posited statements should make their purpose intelligible alongside their
-formalization. For every story-bearing object, choose the physically native
-quantity before deciding whether a normalized or formal helper is useful.
-Operational characterization is preferred when useful; the other forms in
-[physical-lead.md](physical-lead.md) remain valid.
+Posited statements should make their purpose intelligible alongside their formalization. For **named objects in the physical or protocol story**, consider physical meaning before choosing a definition; prefer an operational characterization when useful, while allowing the other forms in [physical-lead.md](physical-lead.md). Motivation need not uniquely determine the formula.
 
-**Required products when triggered:** **Independent formalization** (round-trip,
-for prose offered as an exact characterization); **Excluded pathology**
-(negative-space, where applicable); **Object ledger** for a new or changed
-story-bearing object.
+**Required products:** **Independent formalization** (round-trip, for prose offered as an exact characterization); **Excluded pathology** (negative-space, where applicable); **Physical meaning and definition choice** if the statement names a physical or protocol object.
 
 Run every check below in order.
 
 | Check | What to verify |
 |-------|----------------|
-| **Physics lead** | For every story-bearing object, run [physical-lead.md](physical-lead.md): identify the native quantity, scope, included factors, use pattern, and payoff. A precise construction is permitted; an unearned helper is not. |
-| **Factor boundary** | When the definition normalizes, factors, or redistributes a prefactor, run the factor round-trip and inline-substitution tests. Keep the split only when its independent payoff is clear. |
+| **Physical lead** | For named physical/protocol objects, run [physical-lead.md](physical-lead.md): consider meaning first and choose a suitable definition form. Construction is permitted. N/A for a posited condition that does not name such an object. |
 | **Definition layering** | Apply [physical-lead.md](physical-lead.md): connect role, definition, and any claimed characterization. Justify nontrivial equivalences; no mandatory separate lemma or fixed three-stage order. |
 | **Negative-space question** | For a restrictive condition or physical class, what does it exclude, and why? For an action, construction, or convention, state its intended use instead when exclusion is not the point; mark pathology N/A with that reason. Do not invent a pathology to justify a valid definition. |
 | **First-use test** | Where is this statement first used downstream? The motivation should foreshadow that use. If the gap is large, consider moving the statement adjacent to its first use. |

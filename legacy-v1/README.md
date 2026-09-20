@@ -2,8 +2,7 @@
 
 Portable Agent Skill containing graduate-level physics and mathematics prose
 principles: sentence clarity, narrative structure, mathematical logic, and
-physics-led selection of story-bearing objects. It is reference canon, not an
-editing pipeline.
+physically led definitions. It is reference canon, not an editing pipeline.
 
 ## Install
 
@@ -28,14 +27,13 @@ instructions.
 
 ## Entry point
 
-Read [SKILL.md](SKILL.md), then load only the relevant layer:
+Read [LEGACY.md](LEGACY.md), then load only the relevant layer:
 
 - [sentence.md](sentence.md) for a local passage;
 - [narrative.md](narrative.md) for multi-sentence structure;
 - [math.md](math.md) for equations and logical claims;
-- [physical-lead.md](physical-lead.md) for every new or materially changed
-  story-bearing object, including formal helpers and normalized quantities.
+- [physical-lead.md](physical-lead.md) for named physical or protocol objects.
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT — see [LICENSE](../LICENSE).

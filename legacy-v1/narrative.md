@@ -1,12 +1,10 @@
 # Passage-level principles
 
-**For agents:** Start with [SKILL.md](SKILL.md). Open for anything longer than one standalone sentence: paragraph, subsection, section, or full paper.
+**For agents:** Start with [LEGACY.md](LEGACY.md). Open for anything longer than one standalone sentence: paragraph, subsection, section, or full paper.
 
 **Scope the unit under review:** one paragraph → “the whole” means that paragraph; a section → that section; full paper → the paper. When a principle needs broader context (e.g. vs abstract), read surrounding material first.
 
-Start with the physics spine and object inventory. Then run only the groups and
-bullets triggered by an actual drafting or review problem. Do not enumerate
-every bullet or emit `N/A` for unused checks.
+Apply all four groups and every bullet in order. Name each group and bullet; state how it applies. If N/A: **not applicable** and why.
 
 Sentence-scale wording is [sentence.md](sentence.md). These groups ask whether the *unit* holds together. Do not re-run the 15 sentence principles here except where a bullet explicitly points to one.
 
@@ -15,17 +13,6 @@ Sentence-scale wording is [sentence.md](sentence.md). These groups ask whether t
 ---
 
 ## Group 1 — Core message and framing
-
-- **Physics spine** — state the physical situation, mechanism, relevant
-  quantity, and conclusion before optimizing sentence order.
-  Detect: if these cannot be stated in one to four short lines, the passage is
-  likely organized around formulas or chronology rather than physical logic.
-  Artifact: **Physics spine**.
-- **Object inventory** — list every new or materially changed story-bearing
-  object and run [physical-lead.md](physical-lead.md) before accepting the
-  narrative decomposition.
-  Detect: definitions, new symbols, changed normalization, moved prefactors,
-  generating functions, and named bounds. Artifact: **Object ledger**.
 
 - **Central message** — one clear takeaway per unit; flag missing or competing messages.
   Detect: if you cannot write the unit’s takeaway in **one sentence without hedging stacks**, the unit has competing messages. Artifact: **Takeaway**.
@@ -44,12 +31,8 @@ Sentence-scale wording is [sentence.md](sentence.md). These groups ask whether t
   Detect: same **speech-act** test as sentence 7 at unit scale. Artifact: **Speech-act**.
 - **Prose vs math** — language carries motivation, connections, physical interpretation, and understanding; math carries definitions, relations, and formal claims. Flag passages that describe in words what should be stated as math. For posited statements, motivation before the formula; back-translation / round-trip / unfaithful prose are [math.md](math.md) Type 2.
   Detect: delete-the-paraphrase at passage scale. Artifact: **Reverse outline**.
-- **Physics lead on story-bearing objects** — let the physically native
-  quantity, its scope, and its factor content guide the name and definition
-  ([physical-lead.md](physical-lead.md)). Formal helpers must earn their place;
-  "bookkeeping" alone is not an exemption.
-  Detect: **Object ledger** plus factor round-trip, inline-substitution, and
-  payoff tests. Artifact: **Object ledger**.
+- **Physical lead on named objects** — let physical role and category guide a mechanism-distinguishing name and definition ([physical-lead.md](physical-lead.md)). Prefer defining through physical meaning when that is precise and illuminating; other forms are valid. Assess motivation and interpretation across the local passage, not only inside the definition environment.
+  Detect: **Physical meaning and definition choice** for each newly named object. Artifact: **Physical meaning and definition choice**.
 - **Signposting and transitions** — roadmaps, summaries, forward/back references; flag abrupt jumps. Cross-boundary reminders follow sentence principle 2: if the reminder is hard to phrase, the referenced item is too minor or too distant.
   Detect: inventory `however` / `thus` / `therefore` / `conversely`; each must be licensed by the because-chain. Artifact: **Connective inventory**.
 - **Confusion-on-first-read ordering** — apply sentence principle 13 at passage scale. A unit that stacks several Tier-2/3 sentences has an ordering problem even if each sentence is locally grammatical. Same three tiers (deferred & flagged / resolved next sentence / never or much later).
@@ -61,10 +44,6 @@ Sentence-scale wording is [sentence.md](sentence.md). These groups ask whether t
   Detect: list promises (`we will show`, `\ref`) vs payoffs in the unit. Artifact: **Promise / payoff**.
 - **Redundancy and balance** — no purposeless repetition; length matches importance; right section vs appendix.
   Detect: two reverse-outline lines that paraphrase each other → redundancy. Artifact: **Reverse outline**.
-- **Object economy** — no helper quantity, normalization, or factor split that
-  the argument immediately undoes or never uses independently.
-  Detect: apply the three diagnostics in [physical-lead.md](physical-lead.md).
-  Artifact: **Object ledger**.
 
 ## Group 4 — Claims and audience
 
