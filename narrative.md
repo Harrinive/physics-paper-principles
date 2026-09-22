@@ -1,12 +1,18 @@
 # Passage-level principles
 
-**For agents:** Start with [SKILL.md](SKILL.md). Open for anything longer than one standalone sentence: paragraph, subsection, section, or full paper.
+**For agents:** Start with [SKILL.md](SKILL.md). Open for a multi-paragraph
+explanation or a manuscript passage. A short conversational answer does not
+trigger this file merely because it contains two or more sentences.
 
-**Scope the unit under review:** one paragraph → “the whole” means that paragraph; a section → that section; full paper → the paper. When a principle needs broader context (e.g. vs abstract), read surrounding material first.
+**Scope the unit under review:** an answer means the whole answer; one paragraph
+means that paragraph; a section means that section; a full paper means the
+paper. Use title, abstract, introduction, conclusion, novelty, and CARS checks
+only for manuscripts or research documents that have those functions.
 
-Start with the physics spine and object inventory. Then run only the groups and
-bullets triggered by an actual drafting or review problem. Do not enumerate
-every bullet or emit `N/A` for unused checks.
+Start with the physics claim or, for substantial prose, a compact physics spine
+and object inventory. Then run only the groups and bullets triggered by an
+actual drafting or review problem. In conversation, apply them silently. Do not
+enumerate every bullet or emit `N/A` for unused checks.
 
 Sentence-scale wording is [sentence.md](sentence.md). These groups ask whether the *unit* holds together. Do not re-run the 15 sentence principles here except where a bullet explicitly points to one.
 
@@ -71,4 +77,4 @@ Sentence-scale wording is [sentence.md](sentence.md). These groups ask whether t
 - **Scope of claims** — conclusions match evidence; limitations acknowledged; no over- or under-claiming.
   Detect: **claim–reason–evidence** for the unit claim; list strength words (`all` / `every` / `iff` / `necessary` / `proves` vs `may` / `suggests`). Artifact: **CRE + strength words**.
 - **Audience and entry points** — background introduced before use; flag prerequisites assumed too early.
-  Detect: list symbols and terms used before introduced; imported results need a theorem/page cite, not a whole-work cite. Artifact: **Entry-point list**.
+  Detect: list symbols and terms used before introduced. In citation-sensitive work, cite an imported result at theorem or page level rather than pointing only to the whole work; ordinary conversation does not require citations for standard textbook facts. Artifact: **Entry-point list**.

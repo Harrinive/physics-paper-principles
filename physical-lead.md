@@ -1,8 +1,14 @@
 # Physics-led object choice
 
-Open this file whenever a passage introduces, renames, normalizes, factors, or
-materially redefines a **story-bearing object**. The trigger is the object's role
-in the argument, not whether it sounds explicitly physical.
+Open this file whenever user-facing physics or mathematics prose introduces,
+renames, normalizes, factors, or materially redefines a **story-bearing object**.
+The trigger is the object's role in the argument, not whether it sounds
+explicitly physical or appears in conversation, documentation, or a manuscript.
+
+Use it proportionally. Familiar textbook objects used in their standard sense
+need no audit. Keep a one-off quantity as a plain description when possible. A
+new recurring object gets the naming, scope, and payoff checks below; reserve a
+full written ledger for manuscript editing or substantive formal review.
 
 ## Physics first
 
@@ -21,7 +27,7 @@ argument naturally needs. Record internally:
    independently of the quantity from which it was factored.
 6. **Disposition** — keep, rename, absorb a factor, inline, or remove.
 
-This **object ledger** is a drafting/review aid, not boilerplate for the paper.
+This **object ledger** is a private drafting and review aid, not boilerplate for the answer or paper.
 
 ## Three diagnostics
 
@@ -53,7 +59,9 @@ A helper earns a name when at least one substantive payoff is present:
 - compression of a genuinely recurring formal structure;
 - a later theorem, bound, or construction that treats it independently.
 
-Being algebraically valid is not a payoff.
+Being algebraically valid or saving a few repeated words is not by itself a
+payoff. Do not create an abbreviation or short label solely to avoid repeating a
+clear standard name.
 
 ## Definition forms
 
@@ -86,6 +94,9 @@ diagnostics.
 
 ## Quality decision
 
+Use the labels below only in an explicit review or editing workflow. In ordinary
+conversation, apply the decision silently and write the corrected explanation.
+
 `physics_lead: PASS` requires all of the following:
 
 - the physically native quantity and scope are identifiable;
@@ -116,5 +127,5 @@ story, and require a payoff for every auxiliary decomposition."
 
 - Preserve a valid construction when its physical role is supported, even if no
   independent operational criterion exists.
-- Improve thin motivation when the manuscript supplies the meaning.
+- Improve thin motivation when the surrounding context supplies the meaning.
 - Do not resolve genuine scientific ambiguity by stylistic preference.

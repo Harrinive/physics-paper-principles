@@ -1,12 +1,17 @@
 # Math and logic principles
 
-**For agents:** Start with [SKILL.md](SKILL.md). Open whenever the text has mathematical objects, equations, or logical arguments — any length. Consider the snippet plus surrounding and earlier paper text.
+**For agents:** Start with [SKILL.md](SKILL.md). Open whenever user-facing
+text contains mathematical objects, equations, definitions, approximations, or
+logical arguments. Consider the local text and the relevant earlier context.
 
-Classify each changed mathematical statement, then run only the checks required
-by its type and the actual edit. Record a compact **math delta** rather than
-enumerating unused checks or `N/A` fields.
+Classify each new or changed mathematical statement internally, then run only
+the checks required by its type and the task. In conversation, keep the
+classification and any **math delta** private unless the user requests a formal
+review. Do not enumerate unused checks or `N/A` fields.
 
-Each type lists **Required products** — the artifacts that make the checks visible. Coworker-loop **math workers** run the inverted workflow in **`physics-paper-editing`** (artifact first, then the checks listed under it).
+Each type lists **Required products** for explicit review workflows. Coworker-loop
+**math workers** run the inverted workflow in **`physics-paper-editing`**
+(artifact first, then the checks listed under it).
 
 Any new or changed story-bearing object—including normalized quantities,
 weights, generating functions, bounds, and formal helpers—also triggers
@@ -16,13 +21,13 @@ weights, generating functions, bounds, and formal helpers—also triggers
 
 ## Step 0 — Classify each math statement
 
-For every definition, condition, equation, lemma, theorem, or model in the passage, state its type explicitly before running checks (**Required product:** Type tag). A statement can be dual-typed (run both check sets):
+For every new or changed definition, condition, equation, lemma, theorem, or model, classify its type before running checks (**Required product in explicit review:** Type tag). A statement can be dual-typed (run both check sets):
 
 | Type | Description | Criterion to verify |
 |------|-------------|---------------------|
 | **Derived** | Follows from earlier statements by logical deduction. | Rigor — is the conclusion forced by the premises? |
 | **Posited** | Given as a starting point: definitions, conditions, models, axioms. | Faithfulness **and** physics lead — is the definition precise, is its role explained, is the chosen quantity earned, and does any claimed characterization agree with it? |
-| **Imported** | Cited result, experimental fact, or conjecture from outside the paper's deductive chain. | Provenance — is the source identified, applicable, and correctly invoked? |
+| **Imported** | Cited result, experimental fact, or conjecture from outside the current argument's deductive chain. | Provenance — is the source identified, applicable, and correctly invoked? |
 | **Convention choice** | A choice among equivalent alternatives: canonical representative, gauge/basis fixing, sign or normalization convention. | Legitimacy — does the choice exist, and are downstream results independent of it? |
 
 ## Approximation claims
@@ -55,7 +60,7 @@ Run every check below in order.
 | **Implicit assumptions** | Commutativity, invertibility, finiteness, independence, etc. declared where needed. |
 | **Direction of implications** | "If and only if" vs "if"; equivalences bidirectional when claimed; conclusion follows from premises. |
 | **Circular reasoning** | No claim used in its own justification. |
-| **Consistency with earlier results** | No contradiction with prior definitions, lemmas, or claims in the paper. |
+| **Consistency with earlier results** | No contradiction with prior definitions, lemmas, or claims in the current conversation or document. |
 
 ---
 
@@ -90,17 +95,23 @@ Run every check below in order.
 
 ## Type 3 checks (Imported)
 
-**Required products:** **Import** — quoted hypotheses vs hypotheses used here; citation is theorem/page not the whole work; **status** (theorem vs conjecture vs numerical observation).
+Apply these checks when the task makes a source-dependent claim, supplies a
+citation, or requires manuscript-grade provenance. Standard textbook facts in
+ordinary conversation do not require citations under this skill.
 
-Run every check below in order; escalate when verification is not possible.
+**Required products in explicit review:** **Import** — quoted hypotheses vs
+hypotheses used here; citation is theorem/page rather than the whole work;
+**status** (theorem vs conjecture vs numerical observation).
+
+Run the applicable checks below; escalate when required verification is not possible.
 
 | Check | What to verify |
 |-------|----------------|
-| **Citation present** | A citation is attached to the statement. Flag any uncited import — treat it as unverified until sourced. |
+| **Citation present** | In manuscripts or citation-sensitive work, attach a citation to the statement and flag an uncited import as unverified. In ordinary conversation, cite only when requested or when the claim materially depends on a particular source. |
 | **Hypotheses satisfied** | The source theorem's hypotheses hold in the present setting. Flag mismatches (e.g., finite vs. infinite dimension, bounded vs. unbounded operators, real vs. complex field). |
-| **Notation translation** | Differences between the source's notation and the paper's notation are stated or obvious; no silent relabeling that changes meaning. |
+| **Notation translation** | Differences between the source's notation and the current explanation's notation are stated or obvious; no silent relabeling that changes meaning. |
 | **Status match** | The statement is presented at the same strength as in the source: a conjecture or numerical observation is not presented as an established result. |
-| **Verification** | If the cited source is accessible (DOI, arXiv, standard textbook), fetch or search it and confirm the statement appears as claimed. If not accessible, record the result as **user-trusted** and ask the author to confirm. Never silently trust an unverifiable import. |
+| **Verification** | When the task requires source verification, fetch or search an accessible cited source and confirm the statement. If it is inaccessible, mark the claim as user-trusted and ask the user or author to confirm. Do not turn an ordinary conceptual answer into a literature search merely because it uses standard background knowledge. |
 
 ---
 
