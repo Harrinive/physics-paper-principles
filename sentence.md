@@ -3,16 +3,18 @@
 **For agents:** Start with [SKILL.md](SKILL.md). Open for any user-facing
 physics or mathematics sentence or local passage.
 
-Use these principles to repair local problems identified by a direct reading or,
-when applicable, by the physics spine, object audit, or math delta. In
-conversation mode, apply relevant principles silently; do not enumerate all 15
-or emit `N/A` fields. Report diagnostics only when the user asks for an editorial
-assessment.
+Check every sentence under review against all 15 principles. A principle may be
+inapplicable because its stated object is absent; it may not be skipped because
+the editor is concentrating on another problem. Repair local problems identified
+by direct reading or, when applicable, by the physics spine, terminology-and-
+notation delta, object audit, or math delta. In conversation mode, apply the
+principles silently; do not enumerate all 15 or emit `N/A` fields. Report
+diagnostics only when the user asks for an editorial assessment.
 
-These are drafting rules, not a process. How a manuscript-editing job grades or
-merges violations lives in **`physics-paper-editing`**. Coworker-loop **sentence
-workers** run the inverted workflow there (artifact first, then the principles
-listed under it). They do not walk 1–15 as the primary loop.
+These are drafting rules, not a process. How an editing job routes review,
+records evidence, and repairs violations lives in **`physics-paper-editing`**.
+That workflow must enforce every applicable principle even when it records only
+the failures.
 
 **Detect** is how to see a violation. Several principles share one artifact on purpose.
 
@@ -22,7 +24,7 @@ listed under it). They do not walk 1–15 as the primary loop.
 |---|-----------|--------|----------|
 | 1 | **Clarify local references** — every pronoun (“it”, “which”, “this”, …) points to a specific noun; short back-references tie unambiguously to the concept they invoke. | **Substitution:** replace each `it/this/which/these` with every candidate noun; if two substitutions are grammatical, fail. | Antecedent map |
 | 2 | **Clarify cross-boundary references** — for equation/result/conclusion references across an obvious boundary (section, proof, paragraph block, etc.), remind the reader what the referenced item says or does, not just its label. If that reminder is awkward or hard to state, the reference may be too minor or too distant — reorder or move the referenced material closer. | **Content reminder:** restate what the labeled result *does* in one clause plus the number (not a naked `\ref`). If the only reminder is copying the whole formula, the pointer is too far. | Antecedent map (cross-boundary row) |
-| 3 | **Define or replace undefined terminology and unnecessary shorthand** — use the field-standard term when one exists. Define a necessary nonstandard term at first use. Do not coin a label, acronym, abbreviation, or clipped name when a plain description or the standard full name suffices. A short form is earned only when it recurs enough to improve comprehension; repeat the full name when shortening would create ambiguity. Preserve the user's established name unless it is misleading or conflicts with standard usage. Distinct from 15 (shifted meaning of an established term). | **Coinage and shortening test:** a new term or short form must be definable in existing vocabulary, recur, and make the explanation easier to follow. Otherwise use the standard term or plain description. Define it before first *substantive* use. | Kernel (flag coined or shortened heads) |
+| 3 | **Define or replace undefined terminology and unnecessary shorthand** — use the project-established or field-standard term and symbol when one exists. Define a necessary nonstandard term at first use. Do not coin a label, acronym, abbreviation, clipped name, primed alias, unsubscripted alias, or one-off mathematical symbol when a plain description or an established name or symbol suffices. A short form is earned only when it recurs enough to improve comprehension; repeat the full name when shortening would create ambiguity. Preserve the user's established name unless it is misleading or conflicts with standard usage. Distinct from 15 (shifted meaning of an established term). | **Terminology-and-notation delta:** compare the completed draft with the source passage, surrounding document, and any project vocabulary registry. Flag every technical head noun, compound label, abbreviation, or mathematical symbol that occurs only in the draft. Keep it only if it is standard or necessary, defined at first use, and reused enough to improve comprehension. Otherwise replace it with the established term or symbol, or state the relation directly. | Terminology-and-notation delta |
 | 4 | **Fix subject–verb–object mismatches** — grammatical agreement and semantic fit, including inside clauses (e.g. states do not “yield” results; a model does not “prove” a conclusion). | **Kernel:** drop modifiers; one SVO per clause. The remaining subject must be the object that actually bears the verb. A kernel that *changes the head* is a failed reduction, not a pass. | Kernel |
 | 5 | **Streamline narrative** — coherent flow between sentences; remove redundant phrases or nouns that signal convoluted logic. | **Given-new:** the topic of this sentence should be the stress of the previous; duplicated nouns in the kernel mark convolution. | Topic / stress |
 | 6 | **Polish non-native or over-compressed wording** — use concise, idiomatic English while preserving meaning and technical accuracy. Expand a noun stack or compressed phrase when it hides the physical relation, agent, or scope. | **Paramedic:** stacked `of/in/for`, `be`-verbs, slow wind-ups (`it is…that`), and noun stacks whose relation cannot be recovered on first reading. | Kernel |

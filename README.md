@@ -6,9 +6,11 @@ structure, mathematical logic, and physics-led selection of story-bearing
 objects. It applies to chat, notes, documentation, and papers. It is reference
 canon, not an editing pipeline.
 
-The package name is retained for compatibility with its manuscript-editing
-siblings. In ordinary conversation the principles are applied silently and
-proportionally; explicit paper edits can use the full private diagnostics.
+The package name is retained for compatibility with its editing siblings. In
+ordinary conversation the principles are applied silently. Content determines
+which canon files apply, and every principle in an applicable file is
+mandatory. Explicit drafting and editing can use the full private diagnostics
+through the editing skills.
 
 ## Install
 
@@ -19,7 +21,7 @@ git clone https://github.com/Harrinive/physics-paper-principles.git ~/.agents/sk
 ```
 
 The skill needs only linked-file reading and works as a standalone communication,
-writing, or review reference. For a draft-first manuscript editing loop, install
+writing, or review reference. For a draft-first physics editing loop, install
 its sibling
 [physics-paper-editing](https://github.com/Harrinive/physics-paper-editing);
 for long sections, also install

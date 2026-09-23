@@ -1,12 +1,11 @@
 ---
 name: physics-paper-principles
 description: >-
-  Physics-first principles for clear, scientifically faithful physics and
-  mathematics communication in chat, notes, documentation, and papers. Use
+  Mandatory physics-first principles for clear, scientifically faithful physics
+  and mathematics communication in chat, notes, documentation, and papers. Use
   when explaining, deriving, interpreting, naming, writing, or reviewing
-  physical or mathematical ideas. Apply relevant rules silently in conversation;
-  pair with physics-paper-editing or physics-paper-editing-section only for
-  explicit manuscript editing.
+  physical or mathematical ideas. Pair with physics-paper-editing or
+  physics-paper-editing-section for explicit drafting or editing workflows.
 ---
 
 # Physics communication principles
@@ -20,6 +19,17 @@ The governing rule is physics first: mathematical correctness does not by
 itself justify which quantity is named, which factors are separated, or how the
 argument is narrated.
 
+## Status of the canon
+
+Every principle in an applicable canon file is mandatory. Content routing
+determines which canon files apply; it does not allow an editor to ignore one
+principle because another issue appears more important. A principle is
+inapplicable only when its stated object is absent from the passage.
+
+A passage fails the canon if any applicable principle fails. A favorable
+high-level impression does not override a specific terminology, notation,
+logic, object-choice, sentence, or narrative violation.
+
 ## Modes
 
 ### Conversation mode
@@ -27,7 +37,7 @@ argument is narrated.
 Use for chat answers, explanations, derivations, research discussion, notes,
 docstrings, and other user-facing physics or mathematics prose.
 
-- Apply only the principles triggered by the content.
+- Apply every principle in each canon file selected by the content.
 - Apply them silently. Do not announce layers or expose review artifacts unless
   the user asks for an editorial diagnosis.
 - Prefer standard terminology and complete, idiomatic sentences.
@@ -66,26 +76,33 @@ Start with the smallest applicable path:
 
 1. **Physics or mathematical claim** — identify the physical situation or
    mathematical setting, relevant mechanism or relation, and conclusion.
-2. **Terminology and objects** — preserve standard terms. Audit a new or
-   materially changed story-bearing object only when the communication asks it
-   to carry explanatory or computational work.
-3. **Math and logic** — when formal content is present, check the applicable
+2. **Terminology and notation** — preserve established terms and symbols.
+   Audit every technical term, shortened name, abbreviation, and mathematical
+   alias introduced by the draft. This check is not limited to story-bearing
+   objects.
+3. **Story-bearing objects** — apply the full object audit to every new or
+   materially changed object that carries explanatory or computational work.
+4. **Math and logic** — when formal content is present, check the applicable
    definition, equation, hypothesis, implication, approximation, or convention.
-4. **Narrative** — for multi-paragraph explanations or manuscripts, check the
+5. **Narrative** — for multi-paragraph explanations or manuscripts, check the
    logical arc and audience entry points that actually matter.
-5. **Delivery** — answer in natural language without narrating this review.
+6. **Delivery** — answer in natural language without narrating this review.
 
 For manuscript editing or a substantive formal review, the corresponding
 private artifacts are:
 
 - **Physics spine** — the physical situation, mechanism, relevant quantity,
   and conclusion in one to four short lines.
+- **Terminology-and-notation delta** — every technical term, shortened name,
+  abbreviation, or symbol introduced by the draft rather than inherited from
+  the source, project vocabulary, or standard field usage, together with its
+  keep, define, replace, or remove disposition.
 - **Object ledger** — the name, scope, factor content, role, and payoff of each
   new or materially changed story-bearing object.
 - **Math delta** — the changed definition, equation, hypothesis, implication,
   approximation, or convention.
-- **Triggered diagnostics** — only the sentence and narrative checks exposed by
-  the artifacts above.
+- **Applicable diagnostics** — every rule in the selected canon files whose
+  object is present. Record problems rather than exhaustive `N/A` lists.
 
 These are thinking and review aids. Do not insert them into an answer or paper
 unless they explain a real issue or decision.
@@ -136,7 +153,7 @@ unless they explain a real issue or decision.
 | **sc-qubit-research** | Trust assessment and reporting for numerical superconducting-qubit results |
 
 Legacy version-1 canon is retained in [legacy-v1/LEGACY.md](legacy-v1/LEGACY.md)
-only for resuming an existing version-1 editing job.
+as closed historical reference only. Never use it for active work.
 
 ## Out of scope
 

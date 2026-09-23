@@ -10,13 +10,16 @@ paper. Use title, abstract, introduction, conclusion, novelty, and CARS checks
 only for manuscripts or research documents that have those functions.
 
 Start with the physics claim or, for substantial prose, a compact physics spine
-and object inventory. Then run only the groups and bullets triggered by an
-actual drafting or review problem. In conversation, apply them silently. Do not
-enumerate every bullet or emit `N/A` for unused checks.
+and object inventory. Check every group and bullet whose stated object or
+document function is present in the unit under review. A check is not optional
+because another problem dominates. In conversation, apply the checks silently.
+Do not enumerate every bullet or emit `N/A` for inapplicable checks.
 
 Sentence-scale wording is [sentence.md](sentence.md). These groups ask whether the *unit* holds together. Do not re-run the 15 sentence principles here except where a bullet explicitly points to one.
 
-**Detect** is how to see a violation. Shared artifacts are intentional. Coworker-loop **narrative workers** run the inverted workflow in **`physics-paper-editing`** (artifact first, then the bullets listed under it).
+**Detect** is how to see a violation. Shared artifacts are intentional. In an
+explicit editing workflow, **`physics-paper-editing`** may organize review by
+artifact first and then apply every bullet associated with that artifact.
 
 ---
 

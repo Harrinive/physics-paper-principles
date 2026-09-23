@@ -4,14 +4,14 @@
 text contains mathematical objects, equations, definitions, approximations, or
 logical arguments. Consider the local text and the relevant earlier context.
 
-Classify each new or changed mathematical statement internally, then run only
-the checks required by its type and the task. In conversation, keep the
+Classify each new or changed mathematical statement internally, then run every
+check applicable to its type and the task. In conversation, keep the
 classification and any **math delta** private unless the user requests a formal
 review. Do not enumerate unused checks or `N/A` fields.
 
-Each type lists **Required products** for explicit review workflows. Coworker-loop
-**math workers** run the inverted workflow in **`physics-paper-editing`**
-(artifact first, then the checks listed under it).
+Each type lists **Required products** for explicit review workflows.
+**`physics-paper-editing`** may organize review by artifact first and then apply
+every check listed for that artifact.
 
 Any new or changed story-bearing object—including normalized quantities,
 weights, generating functions, bounds, and formal helpers—also triggers
