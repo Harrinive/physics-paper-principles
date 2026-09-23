@@ -45,8 +45,13 @@ artifact first and then apply every bullet associated with that artifact.
 
 ## Group 2 — Logical arc and motivation
 
-- **Logical arc** — each part follows from what precedes; flag gaps, non-sequiturs, unmotivated steps.
-  Detect: **Because-chain** — write $S_n$ because $S_{n-1}$ (or `N/A — gap`); a missing because is a non-sequitur. Artifact: **Because-chain**.
+- **Logical arc** — each part has a clear relation to what precedes; flag gaps,
+  non-sequiturs, and unmotivated steps without forcing every transition to be
+  causal.
+  Detect: **Relation chain** — state the licensed relation from $S_{n-1}$ to
+  $S_n$ (cause, implication, contrast, parallel case, definition, elaboration,
+  or sequence). A relation that cannot be named is a gap; the absence of
+  “because” alone is not. Artifact: **Relation chain**.
 - **Motivation and stakes** — problem and gap before heavy technical content; thread sustained.
   Detect: **CARS** — territory before niche, niche before occupy; name the gap type (knowledge / contradiction / method / extension). A gap with no territory before it, or no purpose after it, fails. Artifact: **Reverse outline** + **CARS tags**.
 - **Model setup as scope** — when a unit introduces a new setting, declare what the work considers or defines (scope, domain, starting point) rather than scattering debatable “assumptions”. Wording follows sentence principle 7.
@@ -60,7 +65,7 @@ artifact first and then apply every bullet associated with that artifact.
   Detect: **Object ledger** plus factor round-trip, inline-substitution, and
   payoff tests. Artifact: **Object ledger**.
 - **Signposting and transitions** — roadmaps, summaries, forward/back references; flag abrupt jumps. Cross-boundary reminders follow sentence principle 2: if the reminder is hard to phrase, the referenced item is too minor or too distant.
-  Detect: inventory `however` / `thus` / `therefore` / `conversely`; each must be licensed by the because-chain. Artifact: **Connective inventory**.
+  Detect: inventory `however` / `thus` / `therefore` / `conversely`; each must be licensed by the relation chain. Artifact: **Connective inventory**.
 - **Confusion-on-first-read ordering** — apply sentence principle 13 at passage scale. A unit that stacks several Tier-2/3 sentences has an ordering problem even if each sentence is locally grammatical. Same three tiers (deferred & flagged / resolved next sentence / never or much later).
   Detect: count Tier-2/3 stalls in the reverse outline; a stack is a passage-scale 13. Artifact: **Reverse outline** (pause list).
 

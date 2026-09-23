@@ -11,7 +11,7 @@ description: >-
 # Physics communication principles
 
 This skill is the **canon for physics communication quality**, not an
-orchestration process. It contains no marks, worker scheduling, merge protocol,
+orchestration process. It contains no marks, reviewer scheduling, merge protocol,
 or model selection. The existing skill name is retained for compatibility with
 the manuscript-editing skills.
 
@@ -48,8 +48,9 @@ docstrings, and other user-facing physics or mathematics prose.
 
 Use for explicit drafting or review of paper prose. The full private diagnostics
 below are available. For an editing workflow, pair this canon with
-**`physics-paper-editing`** for passages of at most 12 sentences or
-**`physics-paper-editing-section`** for longer passages and whole sections.
+**`physics-paper-editing`** for non-section passages of at most 12 sentences or
+**`physics-paper-editing-section`** for longer passages and whole sections of
+any length.
 
 Do not invoke this skill solely for code mechanics, numerical convergence, or
 source retrieval. If such a task also explains physics to the user, apply this
@@ -148,8 +149,8 @@ unless they explain a real issue or decision.
 
 | Skill | Use |
 |---|---|
-| **physics-paper-editing** | Capability-adaptive manuscript editing for passages of at most 12 sentences |
-| **physics-paper-editing-section** | Physics-led manuscript editing for whole sections or passages over 12 sentences |
+| **physics-paper-editing** | Physics-first editing for non-section passages of at most 12 sentences |
+| **physics-paper-editing-section** | Physics-led editing for whole sections of any length or passages over 12 sentences |
 | **sc-qubit-research** | Trust assessment and reporting for numerical superconducting-qubit results |
 
 Legacy version-1 canon is retained in [legacy-v1/LEGACY.md](legacy-v1/LEGACY.md)
