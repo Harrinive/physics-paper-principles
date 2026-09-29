@@ -29,7 +29,7 @@ argument naturally needs. Record internally:
 
 This **object ledger** is a private drafting and review aid, not boilerplate for the answer or paper.
 
-## Three diagnostics
+## Diagnostics
 
 ### Factor round-trip
 
@@ -62,6 +62,26 @@ A helper earns a name when at least one substantive payoff is present:
 Being algebraically valid or saving a few repeated words is not by itself a
 payoff. Do not create an abbreviation or short label solely to avoid repeating a
 clear standard name.
+
+### Convention-merge check
+
+A passage assembled from several sources — a derivation in one formalism
+spliced into prose that otherwise uses another, a supplementary proof's
+notation pulled into a skeleton — can end up naming the same object twice: an
+established quantity, and a general symbol introduced elsewhere only to
+restate it. The tell is a bridging sentence that exists solely to translate
+between the two ("we set $X_j=\mathbf Y_{jj}$...") together with a usage count
+for the general symbol that never rises above its own definition and the one
+place that required it, while the rest of the unit already names the same
+content under the established term.
+
+Count each newly introduced symbol's or term's uses across the full unit under
+review, not just its local paragraph. Resolve a merge seam by restating the
+isolated result in the convention already established, not by keeping both
+and reconciling them with a bridging sentence. Keep the general symbol only
+when it does independent, recurring work beyond the one result it was
+introduced to state — the payoff test above, applied to a whole competing
+notation rather than a single factor.
 
 ## Definition forms
 

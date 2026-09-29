@@ -73,12 +73,31 @@ artifact first and then apply every bullet associated with that artifact.
 
 - **Cross-part consistency** — notation, terminology, claims; promises paid off.
   Detect: list promises (`we will show`, `\ref`) vs payoffs in the unit. Artifact: **Promise / payoff**.
+- **Parallel-unit alignment** — when several bullets, paragraphs, math
+  statements, derivations, or subsections are parallel and cover similar or
+  related material in sequence, align their order, depth, and formal shape:
+  once the reader has understood one, the rest should read faster, and the
+  sequence should look clean. A readability and aesthetic preference, not a
+  demand for identical wording; keep a difference that reflects a real
+  difference in the underlying physics.
+  Detect: **Reverse outline** — list the parallel units side by side and
+  compare move order, formal apparatus, and length; an unexplained divergence
+  between otherwise-alike units is a candidate for alignment. Artifact:
+  **Reverse outline**.
 - **Redundancy and balance** — no purposeless repetition; length matches importance; right section vs appendix.
   Detect: two reverse-outline lines that paraphrase each other → redundancy. Artifact: **Reverse outline**.
 - **Object economy** — no helper quantity, normalization, or factor split that
   the argument immediately undoes or never uses independently.
-  Detect: apply the three diagnostics in [physical-lead.md](physical-lead.md).
+  Detect: apply the diagnostics in [physical-lead.md](physical-lead.md).
   Artifact: **Object ledger**.
+- **Merged-convention detours** — no symbol, term, or definition survives only
+  to bridge two notations for the same object, the residue of splicing a
+  derivation, a supplementary proof, or another source's convention into the
+  passage.
+  Detect: **Convention-merge check** in [physical-lead.md](physical-lead.md) —
+  a use count that never exceeds "defined here, used once more" while the rest
+  of the unit already names the same content differently. Artifact:
+  **Convention audit**.
 
 ## Group 4 — Claims and audience
 
