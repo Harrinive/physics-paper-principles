@@ -15,7 +15,7 @@ document function is present in the unit under review. A check is not optional
 because another problem dominates. In conversation, apply the checks silently.
 Do not enumerate every bullet or emit `N/A` for inapplicable checks.
 
-Sentence-scale wording is [sentence.md](sentence.md). These groups ask whether the *unit* holds together. Do not re-run the 15 sentence principles here except where a bullet explicitly points to one.
+Sentence-scale wording is [sentence.md](sentence.md). These groups ask whether the *unit* holds together. Do not re-run the 16 sentence principles here except where a bullet explicitly points to one.
 
 **Detect** is how to see a violation. Shared artifacts are intentional. In an
 explicit editing workflow, **`physics-paper-editing`** may organize review by
@@ -65,11 +65,14 @@ artifact first and then apply every bullet associated with that artifact.
   Detect: **Object ledger** plus factor round-trip, inline-substitution, and
   payoff tests. Artifact: **Object ledger**.
 - **Signposting and transitions** — roadmaps, summaries, forward/back references; flag abrupt jumps. Cross-boundary reminders follow sentence principle 2: if the reminder is hard to phrase, the referenced item is too minor or too distant.
-  Detect: inventory `however` / `thus` / `therefore` / `conversely`; each must be licensed by the relation chain. Artifact: **Connective inventory**.
+  Keep a short orientation that states how parts connect or where a construction leads, even when headings name the parts: headings name objects, not their relations. Cut a roadmap that only lists the parts, repeats a nearby roadmap, or points to detail the reader cannot yet use.
+  Detect: inventory `however` / `thus` / `therefore` / `conversely`; each must be licensed by the relation chain. For each signpost, ask whether it states a relation or a destination. Artifact: **Connective inventory**.
 - **Confusion-on-first-read ordering** — apply sentence principle 13 at passage scale. A unit that stacks several Tier-2/3 sentences has an ordering problem even if each sentence is locally grammatical. Same three tiers (deferred & flagged / resolved next sentence / never or much later).
   Detect: count Tier-2/3 stalls in the reverse outline; a stack is a passage-scale 13. Artifact: **Reverse outline** (pause list).
 
 ## Group 3 — Consistency and economy
+
+The economy checks serve the reader: a cut that saves words but loses orientation, motivation, or payoff is wrong.
 
 - **Cross-part consistency** — notation, terminology, claims; promises paid off.
   Detect: list promises (`we will show`, `\ref`) vs payoffs in the unit. Artifact: **Promise / payoff**.
@@ -84,8 +87,12 @@ artifact first and then apply every bullet associated with that artifact.
   compare move order, formal apparatus, and length; an unexplained divergence
   between otherwise-alike units is a candidate for alignment. Artifact:
   **Reverse outline**.
-- **Redundancy and balance** — no purposeless repetition; length matches importance; right section vs appendix.
-  Detect: two reverse-outline lines that paraphrase each other → redundancy. Artifact: **Reverse outline**.
+- **Redundancy and balance** — no purposeless repetition, within the text, between the text and a caption, or across sections; length matches importance; right section vs appendix. Repetition is purposeless only when both copies play the same role. Similar wording can hide different roles: a need and the claim that the work meets it; a short caveat at a definition and the full treatment where it is used; a caption and the text, each of which must stand alone; a one-clause reason that makes a claim self-contained. Of two copies with the same role, keep the one that carries motivation or significance, else the one where the statement is used. Text that describes what a figure shows gives way to a pointer to the figure.
+  Detect: two reverse-outline lines that paraphrase each other → name the role of each; the same role → redundancy. Compare each caption with the text that cites its figure, and each claim with what earlier sections already state. Artifact: **Reverse outline**.
+- **Support in proportion to need** — give a claim only the support a reader needs to accept it. A claim that is plain, insightful, or follows from what the reader already accepts keeps its statement; lengthy or hard support moves to an appendix, an equation, or a figure, and the text keeps a pointer. A claim that holds across a family of cases (parameter points, regimes, systems) is supported by its general reason, not by numbers from one case; keep a case-specific number only when that number is itself a result. The level of detail follows the role of the section: an introduction or abstract says what is done and why it matters, the body says how. A short example that follows a concept illustrates it and is not support; shorten a long one rather than cut it. Support that states a construction or relation in words is fixed by writing the equation (sentence principle 12), not by deletion.
+  Detect: **Claim–support map** — for each claim, ask whether a reader would accept it from the statement and a pointer alone, and compare the scope of the claim with the scope of its support. Support that the reader does not need, or one-case evidence for a general claim, is a cut candidate. Artifact: **Reverse outline** (claim / support tags).
+- **Statements true by construction** — a sentence or bullet that holds by definition or by construction (for example, a stationarity condition at a minimum that the passage itself located, a definition restated as a finding, or an arithmetic rewriting of the result just stated) adds no information; drop it or keep only its nontrivial part. The conclusion that a passage exists to deliver stays, even when it follows from the sentence before. Sentence principle 14 is the clause-level counterpart.
+  Detect: ask whether the statement could have come out otherwise; if not, ask whether the passage would lose its point without it. If it would, it is the payoff; if not, it is not a result. Artifact: **Reverse outline** (role tags).
 - **Object economy** — no helper quantity, normalization, or factor split that
   the argument immediately undoes or never uses independently.
   Detect: apply the diagnostics in [physical-lead.md](physical-lead.md).
