@@ -64,6 +64,7 @@ skill to that explanation only.
 | A new, renamed, normalized, or materially changed story-bearing object | Read [physical-lead.md](physical-lead.md) first |
 | Equations, definitions, approximations, or logical argument | + [math.md](math.md) |
 | A multi-paragraph explanation or manuscript passage | + applicable groups in [narrative.md](narrative.md) |
+| A figure or table caption | + [caption.md](caption.md), read with the figure |
 
 A **story-bearing object** is any named quantity that carries explanatory or
 computational work: physical or protocol objects, scalar weights, totals,
@@ -161,4 +162,4 @@ as closed historical reference only. Never use it for active work.
 - Orchestration, model choice, snapshots, or merge state
 - Numerical validation or simulation-pipeline decisions
 - Inventing physical meaning or an unsupported equivalence
-- Source retrieval, BibTeX, figures, or equations-only material with no prose claim
+- Source retrieval, BibTeX, drawing figures, or equations-only material with no prose claim

@@ -44,7 +44,8 @@ Read [SKILL.md](SKILL.md), then load only the relevant layer:
 - [math.md](math.md) for equations, definitions, approximations, and logical
   claims;
 - [narrative.md](narrative.md) for multi-paragraph explanations and manuscript
-  passages.
+  passages;
+- [caption.md](caption.md) for figure and table captions, read with the figure.
 
 ## License
 
