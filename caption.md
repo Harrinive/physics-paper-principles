@@ -86,13 +86,15 @@ violation.
   when other processes also contribute), and a sufficient condition stated as
   if it were necessary.
   Detect: for each claim, ask whether a reader of the text could find a case
-  where the caption's wording is false.
+  where the caption's wording is false. Repair such a case as
+  [sentence.md](sentence.md), principle 16, says, not by adding a qualifier.
 
 ## Group E — Economy and consistency
 
 - **Length cap** — a revised caption is no longer than the caption it replaces
   unless the author allows it. Count rendered words, each mathematical
-  expression as one word. A repair that adds words pays for them with a cut.
+  expression as one word. A repair that adds words pays for them with a cut
+  elsewhere, not by compressing the repaired sentence.
   Detect: the rendered count of the candidate exceeds that of the source.
 - **Caption traps** — check for the patterns that captions invite:
   elliptical (gapped) clauses ("..., and the band, the map"); a title fragment

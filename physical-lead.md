@@ -16,7 +16,8 @@ Before accepting a definition, identify the quantity the physical or protocol
 argument naturally needs. Record internally:
 
 1. **Role and category** — what the object describes, measures, predicts,
-   bounds, or enables; whether it is a state, map, scalar, event, record,
+   bounds, or enables, in one plain phrase that the target reader can use;
+   whether it is a state, map, scalar, event, record,
    convention, representation, or formal helper.
 2. **Scope** — per event, interval, run, round, trajectory, or full protocol.
 3. **Dimensions and scaling** — units, small parameters, extensive factors, and
